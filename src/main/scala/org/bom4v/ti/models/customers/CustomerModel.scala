@@ -1,9 +1,18 @@
 package org.bom4v.ti.models.customers
 
 /**
- * CustomersModel
+ * CustomerModel
  */
-object CustomersModel {
+object CustomerModel {
+
+  /**
+   * Customer details
+   */
+  case class Customer(
+    firstName: String,
+    lastName: String,
+    customerMSISDN: Option[String]
+  )
 
   /**
    * CustomerUpdateEvent
@@ -14,4 +23,3 @@ object CustomersModel {
     customerMSISDN: Option[String]
   )
 }
-
