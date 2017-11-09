@@ -1,14 +1,14 @@
 package org.bom4v.ti.models.customers
 
 /**
- * CustomerAccountModel
+ * CustomerAccount
  */
-object CustomerAccountModel {
+object CustomerAccount {
 
   /**
     * Schema for the churn model 
     */
-  case class AccountForChurn (
+  case class AccountModelForChurn (
     state: String,
     len: Integer,
     acode: String,
